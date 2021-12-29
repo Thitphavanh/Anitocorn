@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:shoppingmall/states/add_product.dart';
+import 'package:shoppingmall/states/add_wallet.dart';
 import 'package:shoppingmall/states/edit_profile_saler.dart';
 import 'package:shoppingmall/states/show_cart.dart';
 import 'package:shoppingmall/utility/my_constant.dart';
@@ -19,6 +20,7 @@ final Map<String, WidgetBuilder> map = {
   '/addProduct': (BuildContext context) => AddProduct(),
   '/editProfileSaler': (BuildContext context) => EditProfileSaler(),
   '/showCart': (BuildContext context) => ShowCart(),
+  '/addWallet': (BuildContext context) => AddWallet(),
 };
 
 String? initlalRoute;
@@ -62,7 +64,6 @@ class MyApp extends StatelessWidget {
       routes: map,
       initialRoute: initlalRoute,
       theme: ThemeData(primarySwatch: materialColor),
-      // theme: ThemeData(primarySwatch: MyConstant.dark),
     );
   }
 }

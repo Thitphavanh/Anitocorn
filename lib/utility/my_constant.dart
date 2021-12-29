@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 class MyConstant {
   // General
   static String appName = 'Phenomenal Logistics';
-  static String domain = 'https://ffb3-103-1-30-101.ngrok.io';
+  static String domain = 'https://3fcc-115-84-96-129.ngrok.io';
 
   // Route
   static String routeAuthen = '/authen';
@@ -14,6 +14,7 @@ class MyConstant {
   static String routeAddProduct = '/addProduct';
   static String routeEditProfileSaler = '/editProfileSaler';
   static String routeShowCart = '/showCart';
+  static String routeAddWallet= '/addWallet';
   // Image
   static String image1 = 'assets/images/image1.png';
   static String image2 = 'assets/images/image2.png';
@@ -65,6 +66,11 @@ class MyConstant {
       );
   TextStyle h2BlueStyle() => TextStyle(
         fontSize: 18,
+        color: Colors.blue,
+        fontWeight: FontWeight.w700,
+      );
+  TextStyle h3BlueStyle() => TextStyle(
+        fontSize: 14,
         color: Colors.blue,
         fontWeight: FontWeight.w700,
       );

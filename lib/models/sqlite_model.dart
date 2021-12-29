@@ -18,8 +18,6 @@ class SQLiteModel {
     required this.sum,
   });
   
-  
-
   SQLiteModel copyWith({
     int? id,
     String? idSeller,

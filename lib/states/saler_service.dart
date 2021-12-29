@@ -82,23 +82,23 @@ class _SalerServiceState extends State<SalerService> {
           IconButton(
             onPressed: () {},
             icon: Icon(Icons.face_outlined),
-            iconSize: 45,
+            iconSize: 36,
             color: MyConstant.light,
             tooltip: 'Edit Shop',
           ),
         ],
         decoration: BoxDecoration(
           gradient: RadialGradient(
-            colors: [MyConstant.dark, MyConstant.darken],
+            colors: [MyConstant.light, MyConstant.dark],
             center: Alignment(-0.8, -0.2),
-            radius: 0.8,
+            radius: 1,
           ),
         ),
         currentAccountPicture: CircleAvatar(
           backgroundImage:
               NetworkImage('${MyConstant.domain}${userModel!.avatar}'),
         ),
-        accountName: Text(userModel == null ? 'name ?' : userModel!.name),
+        accountName: Text(userModel == null ? 'Name ?' : userModel!.name),
         accountEmail: Text(userModel == null ? 'Type ?' : userModel!.type));
   }
 
@@ -116,8 +116,9 @@ class _SalerServiceState extends State<SalerService> {
         textStyle: MyConstant().h2Style(),
       ),
       subtitle: ShowTitle(
-          title: 'ສະແດງລາຍລະອຽດຂອງ Order ທີ່ສັ່ງ',
-          textStyle: MyConstant().h3Style()),
+        title: 'ສະແດງລາຍລະອຽດຂອງ Order ທີ່ສັ່ງ',
+        textStyle: MyConstant().h3Style(),
+      ),
     );
   }
 
@@ -135,8 +136,9 @@ class _SalerServiceState extends State<SalerService> {
         textStyle: MyConstant().h2Style(),
       ),
       subtitle: ShowTitle(
-          title: 'ສະແດງລາຍລະອຽດຂອງໜ້າຮ້ານທີ່ໃຫ້ລູກຄ້າເຫັນ',
-          textStyle: MyConstant().h3Style()),
+        title: 'ສະແດງລາຍລະອຽດຂອງໜ້າຮ້ານ ທີ່ໃຫ້ລູກຄ້າເຫັນ',
+        textStyle: MyConstant().h3Style(),
+      ),
     );
   }
 

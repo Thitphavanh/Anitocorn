@@ -258,7 +258,9 @@ class _ShowProductBuyerState extends State<ShowProductBuyer> {
                 Row(
                   children: [
                     ShowTitle(
-                        title: 'ລາຍລະອຽດ :', textStyle: MyConstant().h2Style()),
+                      title: 'ລາຍລະອຽດ :',
+                      textStyle: MyConstant().h2Style(),
+                    ),
                   ],
                 ),
                 Padding(
@@ -268,8 +270,9 @@ class _ShowProductBuyerState extends State<ShowProductBuyer> {
                       Container(
                         width: 200,
                         child: ShowTitle(
-                            title: productModel.detail,
-                            textStyle: MyConstant().h3Style()),
+                          title: productModel.detail,
+                          textStyle: MyConstant().h3Style(),
+                        ),
                       ),
                     ],
                   ),

@@ -10,9 +10,10 @@ class MyDialog {
       context: context,
       builder: (context) => WillPopScope(
         child: Center(
-            child: CircularProgressIndicator(
-          color: Colors.red,
-        )),
+          child: CircularProgressIndicator(
+            color: Colors.red,
+          ),
+        ),
         onWillPop: () async {
           return false;
         },

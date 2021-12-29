@@ -184,7 +184,10 @@ class _EditProfileSalerState extends State<EditProfileSaler> {
               ),
               IconButton(
                 onPressed: () => createAvatar(source: ImageSource.gallery),
-                icon: Icon(Icons.add_photo_alternate, color: MyConstant.darken),
+                icon: Icon(
+                  Icons.add_photo_alternate,
+                  color: MyConstant.darken,
+                ),
               ),
             ],
           ),
