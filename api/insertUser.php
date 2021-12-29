@@ -25,7 +25,7 @@ if (isset($_GET)) {
 		$user = $_GET['user'];
 		$password = $_GET['password'];
 		$avatar = $_GET['avatar'];
-		
+				
 							
 		$sql = "INSERT INTO `user`(`id`, `name`, `type`, `address`, `phone`, `user`, `password`, `avatar`) VALUES (Null,'$name','$type','$address','$phone','$user','$password','$avatar')";
 
